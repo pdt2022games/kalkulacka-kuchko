@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>kalkulacka</title>
+</head>
+<body>
+    <input type="number" id="cis1">
+    <input type="number" id="cis2">
+    <button onclick="getResult()">plus</button>
+    <button onclick="minus()">minus</button>
+    <button onclick="multiply()">nasobit</button>
+    <button onclick="devide()">delit</button>
+
+
+
+    <p id="result"></p>
+</body>
+
+<script>
+    
+    function getResult(){
+        const number1 = document.getElementById("cis1").value;
+        const number2 = document.getElementById("cis2").value;
+        const result = parseFloat(number1) + parseFloat(number2);
+        document.getElementById("result").innerText = "vysledok je " + result;
+    }
+    function minus(){
+        const number1 = document.getElementById("cis1").value;
+        const number2 = document.getElementById("cis2").value;
+        const result = parseFloat(number1) - parseFloat(number2);
+        document.getElementById("result").innerText = "vysledok je " + result;
+    }
+    function multiply(){
+        const number1 = document.getElementById("cis1").value;
+        const number2 = document.getElementById("cis2").value;
+        const result = parseFloat(number1) * parseFloat(number2);
+        document.getElementById("result").innerText = "vysledok je " + result;
+    }
+    function devide(){
+        const number1 = document.getElementById("cis1").value;
+        const number2 = document.getElementById("cis2").value;
+        const result = parseFloat(number1) / parseFloat(number2);
+        document.getElementById("result").innerText = "vysledok je " + result;
+    }
+</script>
